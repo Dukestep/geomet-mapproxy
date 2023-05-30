@@ -1,0 +1,7 @@
+services:
+  geomet-mapproxy-nightly:
+    build:
+      args:
+        GEOMET_MAPPROXY_URL: http://geomet-dev-21.cmc.ec.gc.ca:9877
+    ports:
+      - "9877:80"
