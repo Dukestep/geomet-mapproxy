@@ -187,7 +187,7 @@ def create_initial_mapproxy_config(mapproxy_cache_config, mode='wms'):
         LOGGER.debug('Configuring layer: {}'.format(layer))
         LOGGER.debug('Configuring layer caches')
         caches['{}_cache'.format(layer)] = {
-            'grids': ['GLOBAL_GEODETIC'],
+            'grids': ['GLOBAL_GEODETIC', 'GLOBAL_WEBMERCATOR'],
             'sources': ['{}_source'.format(layer)]
         }
 
